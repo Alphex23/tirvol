@@ -1,0 +1,196 @@
+﻿@page "/tamas"
+
+<PageTitle>Tirvol Tamás</PageTitle>
+
+<div class="profile-container">
+    <header class="profile-header">
+        <h1>Tirvol Tamás</h1>
+        <p class="subtitle">Társadalmi Szerepvállalás és Sport</p>
+    </header>
+
+    <section class="profile-section">
+        <h2>Társadalmi Szerepvállalások</h2>
+
+        <div class="profile-card">
+            <div class="card-content">
+                <h3>Menedzsment és Controlling Egyesület (MCE)</h3>
+                <p><strong>Tagság:</strong> 2007-től (<a href="https://mce.hu" target="_blank">mce.hu</a>)</p>
+                <p><strong>Publikáció:</strong> Esettanulmány a "Controlling-esettanulmányok" (SALDO 2013) című kiadványban.</p>
+                <p><em>Cím: „Egy faipari vállalkozás nehéz döntése, avagy termeljünk vagy eladjunk?”</em></p>
+            </div>
+            <div class="card-images">
+                <div class="image-placeholder" title="MCE Logo Placeholder"></div>
+                <div class="image-placeholder" title="Book Cover Placeholder"></div>
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <div class="card-content">
+                <h3>Előadások és Workshopok</h3>
+                <h5>MCE Egészségügyi-kontrolling workshopok szervezése:</h5>
+                <ul>
+                    <li>2015. június 4. - SOTE</li>
+                    <li>2016. június 9. - Honvéd Kórház</li>
+                    <li>2016. december 1. - SOTE</li>
+                    <li>2017. június 22. - Szent Imre Egyetemi Oktatókórház</li>
+                    <li>2018. április 11. – SOTE</li>
+                </ul>
+                <h5>Konferencia előadások:</h5>
+                <ul>
+                    <li><strong>MCE Controlling Konferencia (2025. szeptember 23.):</strong> „Controlling a megújuló energia szektorban”</li>
+                    <li><strong>Budapesti Gazdasági Egyetem (BGE, 2022. augusztus 30.):</strong> "Gyakorlati tapasztalatok a kontrolling világából"</li>
+                </ul>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="image-placeholder wide" title="Speaking Photo 1"></div>
+            <div class="image-placeholder" title="Speaking Photo 2"></div>
+            <div class="image-placeholder" title="Speaking Photo 3"></div>
+            <div class="image-placeholder" title="Speaking Photo 4"></div>
+            <div class="image-placeholder" title="Speaking Photo 5"></div>
+        </div>
+    </section>
+
+    <section class="profile-section">
+        <h2>Sport Tevékenység</h2>
+        <div class="profile-card">
+            <div class="card-content">
+                <h3>Vitorlázás</h3>
+                <p>1987-től a <strong>MAFC Vitorlás</strong> szakosztályának tagja, mint vitorlás versenyző.</p>
+            </div>
+            <div class="card-images">
+                <div class="image-placeholder" title="MAFC Logo Placeholder"></div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="image-placeholder wide" title="Sailing Photo 1"></div>
+            <div class="image-placeholder" title="Sailing Photo 2"></div>
+            <div class="image-placeholder" title="Sailing Photo 3"></div>
+            <div class="image-placeholder wide" title="Sailing Photo 4"></div>
+        </div>
+    </section>
+
+    <a href="/" class="back-link">&larr; Back to Home</a>
+</div>
+
+<style>
+    .profile-container {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        color: #333;
+    }
+
+    .profile-header {
+        text-align: center;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 1.5rem;
+    }
+
+        .profile-header h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin: 0;
+        }
+
+    .subtitle {
+        font-size: 1.2rem;
+        color: #7f8c8d;
+    }
+
+    .profile-section {
+        margin-bottom: 2.5rem;
+    }
+
+        .profile-section h2 {
+            font-size: 1.8rem;
+            color: #34495e;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+    .profile-card {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        background-color: #f8f9fa;
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin-bottom: 1.5rem;
+        border: 1px solid #e9ecef;
+    }
+
+    .card-content {
+        flex: 3;
+        min-width: 300px;
+    }
+
+        .card-content h3 {
+            margin-top: 0;
+            color: #2980b9;
+        }
+
+        .card-content h5 {
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .card-content ul {
+            padding-left: 20px;
+            margin-top: 0.5rem;
+            line-height: 1.6;
+        }
+
+    .card-images {
+        flex: 1;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .image-placeholder {
+        background-color: #e9ecef;
+        border: 1px dashed #ced4da;
+        border-radius: 4px;
+        min-height: 120px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #6c757d;
+        font-size: 0.9rem;
+    }
+
+        .image-placeholder.wide {
+            grid-column: span 2;
+        }
+
+    .back-link {
+        display: inline-block;
+        margin-top: 2rem;
+        color: #3498db;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+</style>
