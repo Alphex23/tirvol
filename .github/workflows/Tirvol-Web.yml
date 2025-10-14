@@ -13,7 +13,7 @@ on:
     - master
 env:
   AZURE_STATIC_WEBAPP_NAME: Tirvol-Web
-  APP_DIRECTORY: tirvol
+  APP_DIRECTORY: "/"
   API_DIRECTORY: ''
   OUTPUT: wwwroot
   DEPLOYMENT_ENVIRONMENT: preview
