@@ -1,0 +1,12 @@
+{
+  "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
+  "configurations": {
+    "tirvol": {
+      "appLocation": ".",
+      "outputLocation": "publish\\wwwroot", // <-- CHANGE THIS LINE
+      "appBuildCommand": "dotnet publish Tirvol.csproj -c Release -o publish", // <-- AND THIS LINE
+      "run": "dotnet watch run",
+      "appDevserverUrl": "http://localhost:8000"
+    }
+  }
+}
