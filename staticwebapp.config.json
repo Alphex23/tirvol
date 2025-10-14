@@ -1,0 +1,4 @@
+{
+  "appBuildCommand": "dotnet publish -c Release -o output",
+  "output_location": "wwwroot"
+}
