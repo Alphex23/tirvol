@@ -29,7 +29,7 @@ jobs:
           ###### Repository/Build Configurations ######
           app_location: "/" 
           api_location: "Api" 
-          output_location: "output" # <-- Make this change
+          output_location: "wwwroot" # <-- Make this change
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
@@ -43,4 +43,5 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_AMBITIOUS_DUNE_05BDDB503 }}
           action: "close"
+
 
