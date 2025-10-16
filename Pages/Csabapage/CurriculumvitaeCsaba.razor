@@ -1,0 +1,258 @@
+@page "/CurriculumvitaeCsaba"
+
+<PageTitle>Curriculum Vitae - Tirvol Csaba</PageTitle>
+
+<div class="cv-container">
+    <header class="cv-header">
+        <div class="profile-picture-placeholder"></div>
+        <div class="header-text">
+            <h1>Tirvol Csaba</h1>
+            <p class="subtitle">Aspiring DevSecOps Engineer & System Administrator</p>
+            <div class="contact-info">
+                <span>📍 Nagykovácsi, Hungary</span>
+                <span>📧 ticsabati@gmail.com</span>
+                <span>📞 +36 20 401 3317</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="cv-section">
+        <h2>Professional Summary</h2>
+        <p class="summary-text">
+            A dedicated and proactive Computer Science Engineering student with one year of hands-on experience as an IT System Administrator. Passionate about building and securing IT infrastructure, with a strong interest in pursuing a career in DevSecOps. Proven ability to manage server environments, configure networks, and provide effective user support. A quick learner with strong problem-solving skills, eager to apply academic knowledge and practical experience to a challenging role.
+        </p>
+    </section>
+
+    <div class="main-layout">
+        <div class="main-column">
+            <section class="cv-section">
+                <h2>Work Experience</h2>
+                <div class="cv-card">
+                    <div class="card-content">
+                        <h3>IT System Administrator</h3>
+                        <p><strong>Budenz József Elementary and High School</strong></p>
+                        <p class="date"><em>Jan 2022 – Nov 2022</em></p>
+                        <ul>
+                            <li>Maintained and configured local IT infrastructure, including pfSense firewalls and Ubuntu LTS servers.</li>
+                            <li>Managed the school's Google Workspace for Education environment, handling user accounts and security.</li>
+                            <li>Provided day-to-day technical support and troubleshooting for hardware and software issues.</li>
+                            <li>Developed and maintained documentation for system configurations and internal processes.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cv-section">
+                <h2>Personal Projects</h2>
+                <div class="cv-card">
+                    <div class="card-content">
+                        <h3>Private Server Hosting</h3>
+                        <p>Designed and deployed personal and friends' websites, managing web servers, databases, and DNS configurations from the ground up.</p>
+                    </div>
+                </div>
+                <div class="cv-card">
+                    <div class="card-content">
+                        <h3>Virtual Network Environments</h3>
+                        <p>Built custom virtual environments using VMware and VirtualBox for learning, testing security configurations, and hosting game servers.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="sidebar-column">
+            <section class="cv-section">
+                <h2>Skills</h2>
+                <div class="skills-container">
+                    <span>Windows Server</span>
+                    <span>Linux (Ubuntu, Debian)</span>
+                    <span>Cisco Configuration</span>
+                    <span>pfSense</span>
+                    <span>VPN</span>
+                    <span>C# & .NET</span>
+                    <span>MSSQL</span>
+                    <span>Python</span>
+                    <span>Virtualization</span>
+                    <span>VMware</span>
+                    <span>Cloud Basics (Azure/AWS)</span>
+                    <span>Git</span>
+                </div>
+            </section>
+
+            <section class="cv-section">
+                <h2>Education</h2>
+                <div class="cv-card-simple">
+                    <h3>BSc in Computer Science Engineering</h3>
+                    <p>Óbuda University (2021 – Present)</p>
+                </div>
+                 <div class="cv-card-simple">
+                    <h3>System Administrator (OKJ)</h3>
+                    <p>Addetur Baptista High School (2020-2021)</p>
+                </div>
+            </section>
+
+            <section class="cv-section">
+                <h2>Achievements</h2>
+                 <div class="cv-card-simple">
+                    <h3>EuroSkills 2020 – ICT Specialists</h3>
+                    <p>Placed 45th in the national competition.</p>
+                </div>
+            </section>
+             <section class="cv-section">
+                <h2>Languages</h2>
+                <p><strong>Hungarian</strong> (Native), <strong>English</strong> (Fluent)</p>
+            </section>
+        </div>
+    </div>
+     <a href="/" class="back-link">&larr; Back to Home</a>
+</div>
+
+<style>
+    .cv-container {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        max-width: 950px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        color: #333;
+    }
+
+    .cv-header {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 1.5rem;
+    }
+
+    .profile-picture-placeholder {
+        width: 150px;
+        height: 150px;
+        flex-shrink: 0;
+        background-color: #e9ecef;
+        border: 1px dashed #ced4da;
+        border-radius: 50%;
+    }
+
+    .header-text h1 {
+        font-size: 2.8rem;
+        font-weight: 600;
+        color: #2c3e50;
+        margin: 0;
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+        color: #7f8c8d;
+        margin-top: 0.25rem;
+    }
+    
+    .contact-info {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem 1.5rem;
+        font-size: 0.9rem;
+        color: #555;
+    }
+
+    .cv-section {
+        margin-bottom: 2.5rem;
+    }
+
+    .cv-section h2 {
+        font-size: 1.8rem;
+        color: #34495e;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .summary-text {
+        line-height: 1.6;
+        font-size: 1.05rem;
+    }
+
+    .main-layout {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2.5rem;
+    }
+    
+    .cv-card {
+        background-color: #f8f9fa;
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        border: 1px solid #e9ecef;
+    }
+
+    .cv-card-simple {
+        margin-bottom: 1rem;
+    }
+
+    .cv-card-simple h3, .cv-card h3 {
+        margin-top: 0;
+        color: #2980b9;
+        font-size: 1.15rem;
+    }
+    
+    .cv-card p, .cv-card-simple p {
+        margin: 0.25rem 0;
+    }
+    
+    .date {
+        color: #7f8c8d;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .cv-card ul {
+        padding-left: 20px;
+        margin-top: 0.75rem;
+        line-height: 1.6;
+    }
+
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .skills-container span {
+        background-color: #e9ecef;
+        color: #495057;
+        padding: 0.4rem 0.8rem;
+        border-radius: 16px;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    
+    .back-link {
+        display: inline-block;
+        margin-top: 1rem;
+        color: #3498db;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    
+    .back-link:hover {
+        text-decoration: underline;
+    }
+
+    /* Responsive Design */
+    @@media (max-width: 768px) {
+        .cv-header {
+            flex-direction: column;
+            text-align: center;
+        }
+        .main-layout {
+            grid-template-columns: 1fr;
+        }
+        .contact-info {
+            justify-content: center;
+        }
+    }
+</style>
