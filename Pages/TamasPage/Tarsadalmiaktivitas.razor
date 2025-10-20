@@ -19,8 +19,8 @@
                 <p><em>Cím: „Egy faipari vállalkozás nehéz döntése, avagy termeljünk vagy eladjunk?”</em></p>
             </div>
             <div class="card-images">
-                <div class="image-placeholder" title="MCE Logo Placeholder"></div>
-                <div class="image-placeholder" title="Book Cover Placeholder"></div>
+                <img src="TamasImages/image1.png" alt="Menedzsment és Controlling Egyesület Logo">
+                <img src="TamasImages/image2.png" alt="Controlling-esettanulmányok könyvborító">
             </div>
         </div>
 
@@ -29,25 +29,25 @@
                 <h3>Előadások és Workshopok</h3>
                 <h5>MCE Egészségügyi-kontrolling workshopok szervezése:</h5>
                 <ul>
-                    <li>2015. június 4. - SOTE</li>
-                    <li>2016. június 9. - Honvéd Kórház</li>
-                    <li>2016. december 1. - SOTE</li>
-                    <li>2017. június 22. - Szent Imre Egyetemi Oktatókórház</li>
-                    <li>2018. április 11. – SOTE</li>
+                    [cite_start]<li>2015. június 4. - SOTE [cite: 9, 15]</li>
+                    [cite_start]<li>2016. június 9. - Honvéd Kórház [cite: 10, 16]</li>
+                    [cite_start]<li>2016. december 1. - SOTE [cite: 11, 17]</li>
+                    [cite_start]<li>2017. június 22. - Szent Imre Egyetemi Oktatókórház [cite: 12, 18]</li>
+                    <li>2018. [cite_start]április 11. – SOTE [cite: 13, 19]</li>
                 </ul>
                 <h5>Konferencia előadások:</h5>
                 <ul>
-                    <li><strong>MCE Controlling Konferencia (2025. szeptember 23.):</strong> „Controlling a megújuló energia szektorban”</li>
-                    <li><strong>Budapesti Gazdasági Egyetem (BGE, 2022. augusztus 30.):</strong> "Gyakorlati tapasztalatok a kontrolling világából"</li>
+                    [cite_start]<li><strong>MCE Controlling Konferencia (2025. szeptember 23.):</strong> „Controlling a megújuló energia szektorban” [cite: 20, 21, 22, 23]</li>
+                    [cite_start]<li><strong>Budapesti Gazdasági Egyetem (BGE, 2022. augusztus 30.):</strong> "Gyakorlati tapasztalatok a kontrolling világából" [cite: 24, 25]</li>
                 </ul>
             </div>
         </div>
         <div class="gallery">
-            <div class="image-placeholder wide" title="Speaking Photo 1"></div>
-            <div class="image-placeholder" title="Speaking Photo 2"></div>
-            <div class="image-placeholder" title="Speaking Photo 3"></div>
-            <div class="image-placeholder" title="Speaking Photo 4"></div>
-            <div class="image-placeholder" title="Speaking Photo 5"></div>
+            <img src="TamasImages/image8.jpg" alt="Panelbeszélgetés" class="wide">
+            <img src="TamasImages/image7.jpeg" alt="Előadás a BGE konferencián">
+            <img src="TamasImages/image6.jpeg" alt="Előadás az MCE konferencián">
+            <img src="TamasImages/image3.png" alt="Előadás egy workshopon">
+            <img src="TamasImages/image4.png" alt="Előadás közben">
         </div>
     </section>
 
@@ -56,17 +56,17 @@
         <div class="profile-card">
             <div class="card-content">
                 <h3>Vitorlázás</h3>
-                <p>1987-től a <strong>MAFC Vitorlás</strong> szakosztályának tagja, mint vitorlás versenyző.</p>
+                [cite_start]<p>1987-től a <strong>MAFC Vitorlás</strong> szakosztályának tagja, mint vitorlás versenyző. [cite: 27]</p>
             </div>
             <div class="card-images">
-                <div class="image-placeholder" title="MAFC Logo Placeholder"></div>
+                <img src="TamasImages/image9.png" alt="MAFC Klub Logo">
             </div>
         </div>
         <div class="gallery">
-            <div class="image-placeholder wide" title="Sailing Photo 1"></div>
-            <div class="image-placeholder" title="Sailing Photo 2"></div>
-            <div class="image-placeholder" title="Sailing Photo 3"></div>
-            <div class="image-placeholder wide" title="Sailing Photo 4"></div>
+            <img src="TamasImages/image10.jpeg" alt="Vitorlásverseny a Balatonon" class="wide">
+            <img src="TamasImages/image11.jpeg" alt="Fiatalon a vitorlásban">
+            <img src="TamasImages/image13.jpeg" alt="Díjátadó a csapattal">
+            <img src="TamasImages/image12.jpeg" alt="Vitorlázás a csapattal a tengeren" class="wide">
         </div>
     </section>
 
@@ -125,6 +125,7 @@
         border-radius: 8px;
         margin-bottom: 1.5rem;
         border: 1px solid #e9ecef;
+        align-items: center;
     }
 
     .card-content {
@@ -156,31 +157,33 @@
         gap: 1rem;
         align-items: center;
         justify-content: center;
+        min-width: 150px;
     }
 
     .gallery {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 1rem;
-        margin-top: 1rem;
+        margin-top: 1.5rem;
     }
-
-    .image-placeholder {
-        background-color: #e9ecef;
-        border: 1px dashed #ced4da;
+    
+    /* Added styles for images */
+    .card-images img, .gallery img {
+        max-width: 100%;
+        height: auto;
         border-radius: 4px;
-        min-height: 120px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #6c757d;
-        font-size: 0.9rem;
+        background-color: #e9ecef;
+        object-fit: cover;
     }
 
-        .image-placeholder.wide {
-            grid-column: span 2;
-        }
+    .gallery img {
+        width: 100%;
+        height: 180px; /* Or a fixed height you prefer */
+    }
+
+    .wide {
+        grid-column: span 2;
+    }
 
     .back-link {
         display: inline-block;
