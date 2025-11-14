@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
@@ -8,8 +8,38 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\Images\TamasImages\image10.jpeg" />
+    <Content Remove="wwwroot\Images\TamasImages\image11.jpeg" />
+    <Content Remove="wwwroot\Images\TamasImages\image12.jpeg" />
+    <Content Remove="wwwroot\Images\TamasImages\image13.jpeg" />
+    <Content Remove="wwwroot\Images\TamasImages\image2.png" />
+    <Content Remove="wwwroot\Images\TamasImages\image3.png" />
+    <Content Remove="wwwroot\Images\TamasImages\image4.png" />
+    <Content Remove="wwwroot\Images\TamasImages\image5.png" />
+    <Content Remove="wwwroot\Images\TamasImages\image6.jpeg" />
+    <Content Remove="wwwroot\Images\TamasImages\image7.jpeg" />
+    <Content Remove="wwwroot\Images\TamasImages\image8.jpeg" />
+    <Content Remove="wwwroot\Images\TamasImages\image9.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="9.0.8" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="9.0.8" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Images\TamasImages\image10.jpeg" />
+    <None Include="wwwroot\Images\TamasImages\image11.jpeg" />
+    <None Include="wwwroot\Images\TamasImages\image12.jpeg" />
+    <None Include="wwwroot\Images\TamasImages\image13.jpeg" />
+    <None Include="wwwroot\Images\TamasImages\image2.png" />
+    <None Include="wwwroot\Images\TamasImages\image3.png" />
+    <None Include="wwwroot\Images\TamasImages\image4.png" />
+    <None Include="wwwroot\Images\TamasImages\image5.png" />
+    <None Include="wwwroot\Images\TamasImages\image6.jpeg" />
+    <None Include="wwwroot\Images\TamasImages\image7.jpeg" />
+    <None Include="wwwroot\Images\TamasImages\image8.jpeg" />
+    <None Include="wwwroot\Images\TamasImages\image9.png" />
   </ItemGroup>
 
 </Project>
