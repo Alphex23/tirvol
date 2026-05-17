@@ -1,0 +1,122 @@
+@page "/bence"
+
+<PageTitle>Tirvol Bence - Gamer Profil</PageTitle>
+
+<div class="page-container">
+    <h1 class="main-title">Tirvol Bence</h1>
+    <p class="page-subtitle">Professional Gamer & Content Creator</p>
+
+    <div class="profile-gallery">
+        <!-- CV Card -->
+        <a href="/bence/cv" class="profile-card">
+            <img src="https://placehold.co/400x500/667eea/ffffff?text=Gamer+CV" alt="Gamer CV" class="profile-image" />
+            <div class="profile-name">
+                <h2>Gamer CV</h2>
+            </div>
+        </a>
+
+        <!-- Setup Card -->
+        <a href="#" class="profile-card">
+            <img src="https://placehold.co/400x500/48bb78/ffffff?text=Gaming+Setup" alt="Gaming Setup" class="profile-image" />
+            <div class="profile-name">
+                <h2>Gaming Setup</h2>
+            </div>
+        </a>
+
+        <!-- Achievements Card -->
+        <a href="#" class="profile-card">
+            <img src="https://placehold.co/400x500/ed64a6/ffffff?text=Achievements" alt="Achievements" class="profile-image" />
+            <div class="profile-name">
+                <h2>Achievements</h2>
+            </div>
+        </a>
+    </div>
+
+    <a href="/" class="back-link">&larr; Vissza a Főoldalra</a>
+</div>
+
+<style>
+    .page-container {
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        padding: 2rem;
+        text-align: center;
+        background-color: #1a202c;
+        color: #e2e8f0;
+        min-height: 100vh;
+    }
+
+    .main-title {
+        color: #63b3ed;
+        margin-bottom: 0.5rem;
+        font-size: 3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .page-subtitle {
+        color: #a0aec0;
+        margin-bottom: 2.5rem;
+        font-size: 1.2rem;
+    }
+
+    .profile-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .profile-card {
+        text-decoration: none;
+        color: inherit;
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        position: relative;
+        width: 300px;
+        border: 2px solid #2d3748;
+    }
+
+    .profile-card:hover {
+        transform: translateY(-10px) scale(1.02);
+        box-shadow: 0 20px 25px -5px rgba(99, 179, 237, 0.3);
+        border-color: #63b3ed;
+    }
+
+    .profile-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        filter: grayscale(20%);
+    }
+
+    .profile-name {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to top, rgba(26, 32, 44, 0.9), transparent);
+        padding: 2rem 1rem 1rem;
+        color: white;
+    }
+
+    .profile-name h2 {
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .back-link {
+        display: inline-block;
+        margin-top: 3rem;
+        color: #63b3ed;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .back-link:hover {
+        text-decoration: underline;
+    }
+</style>
