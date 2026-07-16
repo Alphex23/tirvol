@@ -1,5 +1,47 @@
-﻿<h3>Curriculumvitae</h3>
+﻿@page "/tamas/CurriculumvitaeTamas"
 
-@code {
+<div class="container">
+    <nav class="back-nav">
+        <a href="/tamas">← Back to Profile</a>
+    </nav>
 
-}
+    <header class="cv-header">
+        <h1>Curriculum Vitae</h1>
+        <p style="color: var(--text-muted);">Tamás Tirvol — Finance Executive</p>
+    </header>
+
+    <section class="cv-section">
+        <h2>Summary</h2>
+        <p style="max-width: 700px;">
+            Dynamic professional with MSc and BSc qualifications in Finance and Management. Over 20 years of experience in controlling, finance, and accounting, with 15 years in leadership roles. Extensive expertise in the pharmaceutical and renewable energy sectors.
+        </p>
+    </section>
+
+    <section class="cv-section">
+        <h2>Experience</h2>
+
+        <div class="cv-item">
+            <h3>Chief Financial Officer (CFO)</h3>
+            <div class="meta">ASTRASUN Solar Plc. | 2021 – Present</div>
+            <p>Financial management of solar energy projects exceeding 150 MW. Design and implementation of cash flow structures and financial monitoring of construction contracts.</p>
+        </div>
+
+        <div class="cv-item">
+            <h3>Finance Manager / Head of Controlling</h3>
+            <div class="meta">Sager Pharma Kft. | Previous Experience</div>
+            <p>Full management and optimization of financial processes. Budget ownership, SAP implementation, and strategic reporting for executive decision-making.</p>
+        </div>
+    </section>
+
+    <section class="cv-section">
+        <h2>Education</h2>
+        <div class="cv-item">
+            <h3>MSc in Finance and Management</h3>
+            <div class="meta">Budapest Business University</div>
+        </div>
+        <div class="cv-item">
+            <h3>BSc in Finance</h3>
+            <div class="meta">College of Finance and Accountancy</div>
+        </div>
+    </section>
+</div>

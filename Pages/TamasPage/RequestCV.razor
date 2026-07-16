@@ -1,0 +1,49 @@
+@page "/tamas/request-cv"
+@inject NavigationManager Navigation
+
+<div class="container">
+    <nav class="back-nav">
+        <a href="/tamas">← Back to Profile</a>
+    </nav>
+
+    <header class="cv-header">
+        <h1>Request CV</h1>
+        <p style="color: var(--text-muted);">Send a message to Tamás Tirvol</p>
+    </header>
+
+    <div class="card" style="max-width: 600px; margin: 0 auto; background: #ffffff;">
+        <div style="margin-bottom: 1.5rem;">
+            <label style="display: block; font-weight: 600; margin-bottom: 0.5rem; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em;">Your Name</label>
+            <input type="text" @bind="senderName" placeholder="Enter your name" style="width: 100%; padding: 0.75rem; border: 1px solid var(--border); background: var(--card-bg); font-family: inherit; font-size: 1rem;" />
+        </div>
+
+        <div style="margin-bottom: 2rem;">
+            <label style="display: block; font-weight: 600; margin-bottom: 0.5rem; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em;">Message</label>
+            <textarea @bind="messageBody" placeholder="Write your message here..." style="width: 100%; padding: 0.75rem; border: 1px solid var(--border); background: var(--card-bg); font-family: inherit; font-size: 1rem; min-height: 150px; resize: vertical;"></textarea>
+        </div>
+
+        <button @onclick="SendEmail" style="background: var(--accent); color: #ffffff; border: none; padding: 1rem 2rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; cursor: pointer; transition: var(--transition); width: 100%;">
+            Send via Email Client
+        </button>
+    </div>
+</div>
+
+@code {
+    private string senderName = "";
+    private string messageBody = "";
+
+    private void SendEmail()
+    {
+        if (string.IsNullOrWhiteSpace(senderName) || string.IsNullOrWhiteSpace(messageBody))
+        {
+            // Simple validation could be added here
+            return;
+        }
+
+        var subject = Uri.EscapeDataString($"CV Request from {senderName}");
+        var body = Uri.EscapeDataString($"Sender: {senderName}\n\nMessage:\n{messageBody}");
+        var mailtoUrl = $"mailto:tamas.tirvol@gmail.com?subject={subject}&body={body}";
+
+        Navigation.NavigateTo(mailtoUrl);
+    }
+}
